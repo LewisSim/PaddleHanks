@@ -26,5 +26,10 @@ namespace PaddleHanks.GameController.Script
         {
             SetState(new IslandSurvivalDayFirst(this, islandUI));
         }
+
+        public void BeginPaddling()
+        {
+            SetState(new Paddle(this));
+        }
     }
 }

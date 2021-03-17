@@ -1,4 +1,6 @@
-﻿using PaddleHanks.Attributes.Script;
+﻿using System.Collections.Generic;
+using PaddleHanks.Attributes.Script;
+using PaddleHanks.IslandDays.Script;
 using UnityEngine;
 
 namespace PaddleHanks.GameController.Script
@@ -11,10 +13,25 @@ namespace PaddleHanks.GameController.Script
     public class GameValues : MonoBehaviour
     {
         public static GameValues Instance;
+        private int _day;
+
+        public int Day
+        {
+            get => _day;
+            set
+            {
+                _day = value;
+                currentIslandDay = days[_day + 1];
+            }
+        }
+
         public PlayerAttributesController attributes;
+        public List<IslandDay> days = new List<IslandDay>();
+        public IslandDay currentIslandDay;
         
         private void Awake()
         {
+            Day = 1;
             Instance = this;
             DontDestroyOnLoad(this);
         }

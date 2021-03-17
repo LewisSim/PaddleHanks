@@ -15,7 +15,7 @@ namespace PaddleHanks.GameController.Script
         public IslandSurvivalDayFirst(StateMachine stateMachine, IslandUI ui) : base(stateMachine, ui)
         {
         }
-        
+
         //initialise the GameValues attributes
         public override IEnumerator Start()
         {
@@ -25,15 +25,54 @@ namespace PaddleHanks.GameController.Script
 
         public override IEnumerator Play()
         {
-            var islandGamePlay = new IslandGamePlay();
+            var islandGamePlay = new IslandGamePlay(IslandUI);
             yield return End();
         }
 
         public override IEnumerator End()
         {
-            StateMachine.SetState(new IslandSurvival(StateMachine, UI));
-            yield break; 
+            GameValues.Instance.Day++;
+            yield return ChangeState(new IslandSurvival(StateMachine, IslandUI));
         }
 
+    }
+    
+    public class IslandSurvival : GameState
+    {
+        public IslandSurvival(StateMachine stateMachine, IslandUI ui) : base(stateMachine, ui)
+        {
+        }
+
+        public override IEnumerator Start()
+        {
+            IslandUI.ClearUI();
+            yield return Play();
+        }
+
+        public override IEnumerator Play()
+        {
+            var islandGamePlay = new IslandGamePlay(IslandUI);
+            yield return End();
+        }
+        
+        public override IEnumerator End()
+        {
+            GameValues.Instance.Day++;
+            if (GameValues.Instance.Day % 7 == 0)
+            {
+                yield return ChangeState(new Paddle(StateMachine));
+            }
+            else
+            {
+                yield return ChangeState(new IslandSurvival(StateMachine, IslandUI));
+            }
+        }
+    }
+
+    public class Paddle : GameState
+    {
+        public Paddle(StateMachine stateMachine) : base(stateMachine)
+        {
+        }
     }
 }

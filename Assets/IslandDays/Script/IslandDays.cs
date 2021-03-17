@@ -12,9 +12,6 @@ namespace PaddleHanks.IslandDays.Script
     [CreateAssetMenu(fileName = "IslandDay", menuName = "ScriptableObjects/IslandDay/IslandDay")]
     public class IslandDay : ScriptableObject
     {
-        public int dayNumber;
         public List<IslandsEvents> daysEvents = new List<IslandsEvents>();
-
-
     }
 }

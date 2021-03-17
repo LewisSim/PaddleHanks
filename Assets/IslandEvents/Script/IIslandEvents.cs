@@ -1,8 +1,10 @@
-﻿namespace PaddleHanks.IslandEvents.Script
+﻿using UnityEngine;
+
+namespace PaddleHanks.IslandEvents.Script
 {
-    public interface IIslandEvents
+    public abstract class IslandsEvents : ScriptableObject
     {
-        string EventToOccur { get; set; }
+        public string EventToOccur { get; set; }
         
     }
 }

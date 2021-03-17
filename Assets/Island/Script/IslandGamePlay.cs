@@ -1,4 +1,4 @@
-﻿namespace PaddleHanks.GameController.Script
+﻿namespace PaddleHanks.Island.Script
 {
     public class IslandGamePlay
     {

@@ -1,4 +1,5 @@
 ﻿using System;
+using PaddleHanks.Island.Script;
 using UnityEngine;
 
 namespace PaddleHanks.GameController.Script

@@ -2,14 +2,18 @@
 
 namespace PaddleHanks.IslandEvents.Script
 {
+    /// <summary>
+    /// Lewis Simmonds
+    /// 17/03/2021
+    /// Scriptable Object that holds text for the event
+    /// </summary>
     [CreateAssetMenu(fileName = "IslandEventBasic", menuName = "ScriptableObjects/IslandEvents/IslandEventBasic")]
-    public class IslandEventBasic : ScriptableObject, IIslandEvents
+    public class IslandEventBasic : IslandsEvents
     {
-        public string EventToOccur { get; set; }
-        private readonly IslandEvent _islandEvent = new IslandEvent();
+        [SerializeField] private IslandEvent islandEvent = new IslandEvent();
         private void OnEnable()
         {
-            EventToOccur = _islandEvent.textToShow;
+            EventToOccur = islandEvent.textToShow;
         }
     }
 }

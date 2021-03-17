@@ -15,12 +15,8 @@ namespace PaddleHanks.IslandDays.Script
     public class IslandDay : ScriptableObject
     {
         public int dayNumber;
-        public IEnumerable<IIslandEvents> daysEvents = new List<IIslandEvents>();
+        public List<IslandsEvents> daysEvents = new List<IslandsEvents>();
 
-        private void OnEnable()
-        {
-            var myEvents = daysEvents.ToList();
-            Debug.Log(myEvents[0].EventToOccur);
-        }
+
     }
 }

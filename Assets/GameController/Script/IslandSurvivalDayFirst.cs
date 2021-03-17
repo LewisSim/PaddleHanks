@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using PaddleHanks.Attributes.Script;
+using PaddleHanks.Island.Script;
 
 namespace PaddleHanks.GameController.Script
 {

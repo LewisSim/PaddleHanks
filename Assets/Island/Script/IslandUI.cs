@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace PaddleHanks.GameController.Script
+namespace PaddleHanks.Island.Script
 {
     /// <summary>
     /// Lewis Simmonds

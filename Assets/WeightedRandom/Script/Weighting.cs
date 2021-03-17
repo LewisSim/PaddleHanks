@@ -7,17 +7,24 @@ namespace PaddleHanks.WeightedRandom.Script
     /// <summary>
     /// Lewis Simmonds
     /// 17/03/2021
-    /// Abstract class for all weighting holders, add this to your scriptable object to have a list of weighted objects
+    /// Class for all weighting holders, add this to your scriptable object to have a list of weighted objects
     /// </summary>
-    public abstract class Weighting<T> : ScriptableObject where T : WeightedObject
+    public class Weighting<T> where T : WeightedObject
     {
-        [SerializeField] public List<T> objects = new List<T>();
-        [NonSerialized] public float totalWeight;
-
+        public List<T> objects;
+        public float totalWeight;
+        
+        public Weighting(IEnumerable<T> _objects)
+        {
+            objects = new List<T>(_objects);
+            GetTotalWeight();
+        }
+        
+        
         /// <summary>
         /// Get the total weight of all objects
         /// </summary>
-        public void OnEnable()
+        private void GetTotalWeight()
         {
             var objectsTotal = 0f;
             foreach (var items in objects)
@@ -26,12 +33,6 @@ namespace PaddleHanks.WeightedRandom.Script
                 items.cumulative = objectsTotal;
             }
             totalWeight = objectsTotal;
-            SecondEnable();
-        }
-
-        protected virtual void SecondEnable()
-        {
-            //break;
         }
     }
 }

@@ -7,7 +7,9 @@ public class PlayButton : MonoBehaviour
 {
     public void LoadScene(int sceneNumber)
     {
+        
         SceneManager.LoadScene(sceneNumber);
+        
     }
 
 }

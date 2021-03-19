@@ -21,7 +21,8 @@ namespace PaddleHanks.GameController.Script
         {
             StartCoroutine(gameState.Start());
         }
-
+        
+        
         public void BeginIslandArea()
         {
             SetState(new IslandSurvivalDayFirst(this));

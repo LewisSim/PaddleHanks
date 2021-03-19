@@ -37,6 +37,7 @@ namespace PaddleHanks.GameController.Script
             Day = 1;
             Instance = this;
             DontDestroyOnLoad(this);
+            
         }
     }
 }

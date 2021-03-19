@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using PaddleHanks.Attributes.Script;
 using PaddleHanks.IslandDays.Script;
+using PaddleHanks.Items.Script;
 using UnityEngine;
 
 namespace PaddleHanks.GameController.Script
@@ -28,6 +29,7 @@ namespace PaddleHanks.GameController.Script
         public PlayerAttributesController attributes;
         public List<IslandsDays> days = new List<IslandsDays>();
         public IslandsDays currentIslandDay;
+        public List<Item> itemsPlayHas = new List<Item>();
         
         private void Awake()
         {

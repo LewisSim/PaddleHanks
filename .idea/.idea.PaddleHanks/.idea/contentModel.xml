@@ -27,6 +27,15 @@
             <e p="IslandUI.cs" t="Include" />
           </e>
         </e>
+        <e p="IslandChoicesOutcome" t="Include">
+          <e p="Script" t="Include">
+            <e p="Outcome.cs" t="Include" />
+            <e p="OutcomeAddItem.cs" t="Include" />
+            <e p="OutcomeAddLoseHealth.cs" t="Include" />
+            <e p="OutcomeAddLoseHunger.cs" t="Include" />
+            <e p="OutcomeAddLoseThirst.cs" t="Include" />
+          </e>
+        </e>
         <e p="IslandDays" t="Include">
           <e p="Script" t="Include">
             <e p="IslandDay.cs" t="Include" />
@@ -42,6 +51,11 @@
             <e p="WeightedIslandEvent.cs" t="Include" />
           </e>
         </e>
+        <e p="IslandEventsChoices" t="Include">
+          <e p="Script" t="Include">
+            <e p="Choices.cs" t="Include" />
+          </e>
+        </e>
         <e p="Items" t="Include">
           <e p="Script" t="Include">
             <e p="Food.cs" t="Include" />
@@ -50,6 +64,15 @@
             <e p="Liquid.cs" t="Include" />
             <e p="Material.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
+          </e>
+        </e>
+        <e p="PaddleGameplay" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="IPlayerHitObject.cs" t="Include" />
+            <e p="ItemHealOrDamagePlayer.cs" t="Include" />
+            <e p="ItemPickup.cs" t="Include" />
+            <e p="Movement.cs" t="Include" />
+            <e p="OnCollision.cs" t="Include" />
           </e>
         </e>
         <e p="WeightedRandom" t="Include">

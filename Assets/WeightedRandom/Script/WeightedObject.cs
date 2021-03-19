@@ -11,6 +11,7 @@ namespace PaddleHanks.WeightedRandom.Script
     [Serializable]
     public class WeightedObject
     {
+        [Tooltip("How likely the item will appear.")]
         [SerializeField] public float weight;
         [NonSerialized] public float cumulative;
     }

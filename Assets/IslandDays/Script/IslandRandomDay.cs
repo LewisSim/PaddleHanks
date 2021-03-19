@@ -13,7 +13,6 @@ namespace PaddleHanks.IslandDays.Script
     [CreateAssetMenu(fileName = "IslandDay", menuName = "ScriptableObjects/IslandDay/IslandRandomDay")]
     public class IslandRandomDay : IslandsDays
     {
-        [SerializeField] private List<WeightedIslandEvent> weightedIslandEvents = new List<WeightedIslandEvent>();
         [SerializeField] private int amountOfEvents;
         
         /// <summary>

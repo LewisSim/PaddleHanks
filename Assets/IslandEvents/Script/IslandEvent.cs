@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using PaddleHanks.IslandEventsChoices.Script;
 
 namespace PaddleHanks.IslandEvents.Script
 {
@@ -11,5 +13,6 @@ namespace PaddleHanks.IslandEvents.Script
     public class IslandEvent
     {
         public string textToShow;
+        public List<Choices> choices = new List<Choices>();
     }
 }

@@ -10,11 +10,12 @@ namespace PaddleHanks.IslandDays.Script
     /// </summary>
     public class IslandDayTalker : MonoBehaviour
     {
-        [SerializeField] private IslandDay _islandDay;
+        [SerializeField] private IslandsDays _islandDay;
 
         private void Awake()
         {
-            print(_islandDay.daysEvents[0].EventToOccur);
+            var islandsEvents = _islandDay.IslandEvents();
+            Debug.Log(islandsEvents[0].islandEvent.islandEvent.textToShow);
         }
     }
 }

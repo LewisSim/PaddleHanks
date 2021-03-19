@@ -19,9 +19,9 @@ namespace PaddleHanks.Island.Script
 
         void SetUI()
         {
-            foreach (var dayEvent in GameValues.Instance.currentIslandDay.daysEvents)
+            foreach (var dayEvent in GameValues.Instance.currentIslandDay.IslandEvents())
             {
-                _ui.ChangeEventText(dayEvent.EventToOccur);
+                _ui.ChangeEventText(dayEvent.islandEvent.islandEvent.textToShow);
             }
             
         }

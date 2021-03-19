@@ -24,7 +24,7 @@ namespace PaddleHanks.WeightedRandom.Script
         /// <summary>
         /// Get the total weight of all objects
         /// </summary>
-        private void GetTotalWeight()
+        public void GetTotalWeight()
         {
             var objectsTotal = 0f;
             foreach (var items in objects)

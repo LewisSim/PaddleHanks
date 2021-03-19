@@ -26,8 +26,8 @@ namespace PaddleHanks.GameController.Script
         }
 
         public PlayerAttributesController attributes;
-        public List<IslandDay> days = new List<IslandDay>();
-        public IslandDay currentIslandDay;
+        public List<IslandsDays> days = new List<IslandsDays>();
+        public IslandsDays currentIslandDay;
         
         private void Awake()
         {

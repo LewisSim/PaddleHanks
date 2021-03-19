@@ -13,8 +13,11 @@ namespace PaddleHanks.WeightedRandom.Script
     {
         internal T GetRandomObject(Weighting<T> weightedObject)
         {
-            var randomRange = (Random.Range(0f, weightedObject.totalWeight));
-            return weightedObject.objects.Last(gottenTip => gottenTip.cumulative - gottenTip.weight <= randomRange);
+            var randomRange = Random.Range(0f, weightedObject.totalWeight);
+            var randomObject = weightedObject.objects.Last(gottenObj => gottenObj.cumulative - gottenObj.weight <= randomRange);
+            weightedObject.objects.Remove(randomObject);
+            weightedObject.GetTotalWeight();
+            return randomObject;
         }
     }
 }

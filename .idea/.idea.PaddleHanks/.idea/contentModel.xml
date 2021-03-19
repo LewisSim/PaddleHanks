@@ -29,16 +29,16 @@
         </e>
         <e p="IslandDays" t="Include">
           <e p="Script" t="Include">
-            <e p="IslandDays.cs" t="Include" />
+            <e p="IslandDay.cs" t="Include" />
             <e p="IslandDayTalker.cs" t="Include" />
+            <e p="IslandRandomDay.cs" t="Include" />
+            <e p="IslandsDays.cs" t="Include" />
           </e>
         </e>
         <e p="IslandEvents" t="Include">
           <e p="Script" t="Include">
-            <e p="IIslandEvents.cs" t="Include" />
             <e p="IslandEvent.cs" t="Include" />
-            <e p="IslandEventBasic.cs" t="Include" />
-            <e p="IslandEventRandom.cs" t="Include" />
+            <e p="IslandsEvents.cs" t="Include" />
             <e p="WeightedIslandEvent.cs" t="Include" />
           </e>
         </e>

@@ -7,11 +7,14 @@ namespace PaddleHanks.IslandDays.Script
     /// <summary>
     /// Lewis Simmonds
     /// 17/03/2021
-    /// class for all island days, which holds the events that will happen that day
+    /// return a list of every event attached
     /// </summary>
     [CreateAssetMenu(fileName = "IslandDay", menuName = "ScriptableObjects/IslandDay/IslandDay")]
-    public class IslandDay : ScriptableObject
+    public class IslandDay : IslandsDays
     {
-        public List<IslandsEvents> daysEvents = new List<IslandsEvents>();
+        public override List<IslandsEvents> IslandEvents()
+        {
+            return islandsEvents;
+        }
     }
 }

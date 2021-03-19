@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45d5e5152f0e7554fa32a8df2c488b3d, type: 3}
-  m_Name: DontEat
+  m_Script: {fileID: 11500000, guid: 6d2569f7477a42e5a51a5cf62e502d83, type: 3}
+  m_Name: EventBadMonkey
   m_EditorClassIdentifier: 
-  choice: 
-  outcomes: []
+  islandEvent:
+    weight: 0
+    islandEvent:
+      textToShow: 
+      choices: []

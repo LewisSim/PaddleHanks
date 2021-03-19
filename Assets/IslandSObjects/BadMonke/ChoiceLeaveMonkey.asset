@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 719d3c00e3e14833a07e52c5878deaaa, type: 3}
-  m_Name: BadFoodThirst
+  m_Script: {fileID: 11500000, guid: 45d5e5152f0e7554fa32a8df2c488b3d, type: 3}
+  m_Name: ChoiceLeaveMonkey
   m_EditorClassIdentifier: 
-  textOfOutcome: 
-  howMuchThirst: 0
+  choice: 
+  outcomes: []

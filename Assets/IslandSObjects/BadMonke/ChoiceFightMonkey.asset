@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6afe7e2d339e4c37801b7748dc52bec6, type: 3}
-  m_Name: IslandOutcomeAddItem
+  m_Script: {fileID: 11500000, guid: 45d5e5152f0e7554fa32a8df2c488b3d, type: 3}
+  m_Name: ChoiceFightMonkey
   m_EditorClassIdentifier: 
-  textOfOutcome: 
-  howMuchHunger: 0
+  choice: Fight the monkey
+  outcomes:
+  - {fileID: 0}
+  - {fileID: 0}

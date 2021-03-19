@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0f3b4b59ee2450e825b02e142f2fc51, type: 3}
-  m_Name: IslandRandomDay
+  m_Script: {fileID: 11500000, guid: 45d5e5152f0e7554fa32a8df2c488b3d, type: 3}
+  m_Name: ChoiceEatFood
   m_EditorClassIdentifier: 
-  islandsEvents:
-  - {fileID: 11400000, guid: d4deec7a7cc406e4d9a3f984f2c38588, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  amountOfEvents: 1
+  choice: Eat the food
+  outcomes:
+  - {fileID: 11400000, guid: 1f6509ff39ddbf04a86513118a8b85de, type: 2}
+  - {fileID: 11400000, guid: 2559166310d0d8149a2c1de0d995992b, type: 2}

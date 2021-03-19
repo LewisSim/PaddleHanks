@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d2569f7477a42e5a51a5cf62e502d83, type: 3}
-  m_Name: IslandEvents
+  m_Name: EventBadFood
   m_EditorClassIdentifier: 
   islandEvent:
-    weight: 0
+    weight: 1
     islandEvent:
-      textToShow: 
-      choices: []
+      textToShow: You find some food that doesn't smell good, but smells fine. What
+        do you do?
+      choices:
+      - {fileID: 11400000, guid: 8fc136ae84a603247b0493420e44da8c, type: 2}
+      - {fileID: 0}

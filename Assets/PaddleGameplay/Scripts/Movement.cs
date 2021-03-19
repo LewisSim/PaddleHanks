@@ -29,6 +29,7 @@ namespace PaddleHanks.PaddleGameplay.Scripts
             var direction = new Vector3(0, 0, vertical);
             var movement = transform.TransformDirection(direction) * moveSpeed;
             _characterController.SimpleMove(movement);
+            
         }
     }
 }

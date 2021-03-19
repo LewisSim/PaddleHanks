@@ -11,16 +11,21 @@ namespace PaddleHanks.PaddleGameplay.Scripts
     [RequireComponent(typeof(CharacterController))]
     public class OnCollision : MonoBehaviour
     {
-        [SerializeField]private GameObject hitAbleObject;
+        [SerializeField]private string hitAbleObjectTag;
         private CharacterController _characterController;
 
         private void Awake() => _characterController = GetComponent<CharacterController>();
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject != hitAbleObject)
+            if (!other.gameObject.CompareTag(hitAbleObjectTag))
                 return;
-            other.gameObject.GetComponent<IPlayerHitObject>().HitObject(_characterController);
+
+            if (other.TryGetComponent(out IPlayerHitObject hitObject))
+            {
+                hitObject.HitObject(_characterController);
+            }
+            
         }
 
     }

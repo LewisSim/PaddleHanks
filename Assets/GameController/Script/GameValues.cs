@@ -23,7 +23,7 @@ namespace PaddleHanks.GameController.Script
             set
             {
                 _day = value;
-                currentIslandDay = days[_day + 1];
+                //currentIslandDay = days[_day + 1];
             }
         }
 

@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b5522b90e5847079448239192818a61, type: 3}
-  m_Name: IslandDay
+  m_Script: {fileID: 11500000, guid: 6d2569f7477a42e5a51a5cf62e502d83, type: 3}
+  m_Name: IslandEvents
   m_EditorClassIdentifier: 
-  islandsEvents:
-  - {fileID: 11400000, guid: fb45068fd64887b41966184eba9d6c58, type: 2}
+  islandEvent:
+    weight: 0
+    islandEvent:
+      textToShow: 
+      choices: []

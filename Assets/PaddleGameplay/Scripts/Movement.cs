@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using PaddleHanks.GameController.Script;
+using UnityEngine;
 
 namespace PaddleHanks.PaddleGameplay.Scripts
 {
@@ -10,7 +11,7 @@ namespace PaddleHanks.PaddleGameplay.Scripts
     [RequireComponent(typeof(CharacterController))]
     public class Movement : MonoBehaviour
     {
-        public float moveSpeed = 10f;
+        private float moveSpeed => GameValues.Instance.paddleMovementSpeed;
 
         private CharacterController _characterController;
 

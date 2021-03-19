@@ -13,6 +13,7 @@ namespace PaddleHanks.GameController.Script
     /// </summary>
     public class GameValues : MonoBehaviour
     {
+        public float paddleMovementSpeed;
         public static GameValues Instance;
         private int _day;
 

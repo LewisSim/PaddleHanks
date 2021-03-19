@@ -17,7 +17,9 @@
           <e p="Script" t="Include">
             <e p="GameState.cs" t="Include" />
             <e p="GameValues.cs" t="Include" />
+            <e p="IslandSurvival.cs" t="Include" />
             <e p="IslandSurvivalDayFirst.cs" t="Include" />
+            <e p="Paddle.cs" t="Include" />
             <e p="StateMachine.cs" t="Include" />
           </e>
         </e>
@@ -71,8 +73,11 @@
             <e p="IPlayerHitObject.cs" t="Include" />
             <e p="ItemHealOrDamagePlayer.cs" t="Include" />
             <e p="ItemPickup.cs" t="Include" />
+            <e p="Lanes.cs" t="Include" />
             <e p="Movement.cs" t="Include" />
             <e p="OnCollision.cs" t="Include" />
+            <e p="PaddlingGameplay.cs" t="Include" />
+            <e p="SwitchLanes.cs" t="Include" />
           </e>
         </e>
         <e p="WeightedRandom" t="Include">

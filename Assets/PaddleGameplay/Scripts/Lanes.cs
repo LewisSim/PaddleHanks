@@ -43,6 +43,7 @@
         public Lanes(SwitchLanes switchLanes)
         {
             _switchLanes = switchLanes;
+            CurrentLane = Lane.Middle;
         }
         
         public void Move(bool isMovingLeft)

@@ -8,6 +8,7 @@ namespace PaddleHanks.IslandChoicesOutcome.Script
     /// 19/03/2021
     /// Island Outcome that will add or lose thirst
     /// </summary>
+    [CreateAssetMenu(fileName = "IslandOutcomeAddItem", menuName = "ScriptableObjects/IslandOutcomes/IslandOutcomeAddLoseThirst")]
     public class OutcomeAddLoseThirst : Outcome
     {
         [SerializeField] private float howMuchThirst;

@@ -8,6 +8,7 @@ namespace PaddleHanks.IslandChoicesOutcome.Script
     /// 19/03/2021
     /// Island Outcome that will add or minus health
     /// </summary>
+    [CreateAssetMenu(fileName = "IslandOutcomeAddItem", menuName = "ScriptableObjects/IslandOutcomes/IslandOutcomeAddLoseHealth")]
     public class OutcomeAddLoseHealth : Outcome
     {
         [SerializeField] private float howMuchHealth;

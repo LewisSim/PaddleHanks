@@ -9,6 +9,7 @@ namespace PaddleHanks.IslandChoicesOutcome.Script
     /// 19/03/2021
     /// Island Outcome that will add an item
     /// </summary>
+    [CreateAssetMenu(fileName = "IslandOutcomeAddItem", menuName = "ScriptableObjects/IslandOutcomes/IslandOutcomeAddItem")]
     public class OutcomeAddItem : Outcome
     {
         [SerializeField] private Item whatItemToGive;

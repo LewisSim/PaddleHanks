@@ -80,6 +80,12 @@
             <e p="SwitchLanes.cs" t="Include" />
           </e>
         </e>
+        <e p="UI" t="Include">
+          <e p="Main Menu" t="Include">
+            <e p="ExitButton.cs" t="Include" />
+            <e p="PlayButton.cs" t="Include" />
+          </e>
+        </e>
         <e p="WeightedRandom" t="Include">
           <e p="Script" t="Include">
             <e p="RandomWeighting.cs" t="Include" />

@@ -19,7 +19,6 @@ namespace PaddleHanks.PaddleGameplay.Scripts
 
         private void Update()
         {
-            print(_lanes.CurrentLane);
             if (Input.GetKeyDown(KeyCode.A)|| Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 MoveLeft();

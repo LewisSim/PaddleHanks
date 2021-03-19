@@ -11,7 +11,7 @@ namespace PaddleHanks.GameController.Script
     /// </summary>
     public class StateMachine : MonoBehaviour
     {
-        [SerializeField] protected IslandUI islandUI;
+        public IslandUI islandUI;
         private void Awake()
         {
             DontDestroyOnLoad(this);
@@ -24,7 +24,7 @@ namespace PaddleHanks.GameController.Script
 
         public void BeginIslandArea()
         {
-            SetState(new IslandSurvivalDayFirst(this, islandUI));
+            SetState(new IslandSurvivalDayFirst(this));
         }
 
         public void BeginPaddling()

@@ -11,14 +11,8 @@ namespace PaddleHanks.GameController.Script
     public abstract class GameState
     {
         protected readonly StateMachine StateMachine;
-        protected IslandUI IslandUI;
+        protected IslandUI IslandUI => StateMachine.islandUI;
 
-        protected GameState(StateMachine stateMachine, IslandUI islandUI)
-        {
-            StateMachine = stateMachine;
-            IslandUI = islandUI;
-        }
-        
         protected GameState(StateMachine stateMachine)
         {
             StateMachine = stateMachine;

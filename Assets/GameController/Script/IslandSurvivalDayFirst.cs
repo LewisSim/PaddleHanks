@@ -12,7 +12,7 @@ namespace PaddleHanks.GameController.Script
     /// </summary>
     public class IslandSurvivalDayFirst : GameState
     {
-        public IslandSurvivalDayFirst(StateMachine stateMachine, IslandUI ui) : base(stateMachine, ui)
+        public IslandSurvivalDayFirst(StateMachine stateMachine) : base(stateMachine)
         {
         }
 
@@ -32,7 +32,7 @@ namespace PaddleHanks.GameController.Script
         public override IEnumerator End()
         {
             GameValues.Instance.Day++;
-            yield return ChangeState(new IslandSurvival(StateMachine, IslandUI));
+            yield return ChangeState(new IslandSurvival(StateMachine));
         }
 
     }

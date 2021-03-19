@@ -5,7 +5,7 @@ namespace PaddleHanks.GameController.Script
 {
     public class IslandSurvival : GameState
     {
-        public IslandSurvival(StateMachine stateMachine, IslandUI ui) : base(stateMachine, ui)
+        public IslandSurvival(StateMachine stateMachine) : base(stateMachine)
         {
         }
 
@@ -30,7 +30,7 @@ namespace PaddleHanks.GameController.Script
             }
             else
             {
-                yield return ChangeState(new IslandSurvival(StateMachine, IslandUI));
+                yield return ChangeState(new IslandSurvival(StateMachine));
             }
         }
     }

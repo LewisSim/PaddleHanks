@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d5e5152f0e7554fa32a8df2c488b3d, type: 3}
   m_Name: ChoiceLeaveMonkey
   m_EditorClassIdentifier: 
-  choice: 
+  choice: Leave the monkey alone
   outcomes: []

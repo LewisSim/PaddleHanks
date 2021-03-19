@@ -15,5 +15,7 @@ MonoBehaviour:
   islandEvent:
     weight: 0
     islandEvent:
-      textToShow: 
-      choices: []
+      textToShow: A monkey has approached you and looks hostile, what do you do?
+      choices:
+      - {fileID: 11400000, guid: 77aaefa96c399ac4796a13b21982945e, type: 2}
+      - {fileID: 11400000, guid: f74eee3ce9d8fa5438a47924c24adc3b, type: 2}

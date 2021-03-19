@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45d5e5152f0e7554fa32a8df2c488b3d, type: 3}
-  m_Name: ChoiceFightMonkey
+  m_Script: {fileID: 11500000, guid: 5237381b68454aa6ad4e6b20edd0a843, type: 3}
+  m_Name: OutcomeFightHealth
   m_EditorClassIdentifier: 
-  choice: Fight the monkey
-  outcomes:
-  - {fileID: 11400000, guid: 450f7d36427493946aefa0aaa210ed53, type: 2}
-  - {fileID: 11400000, guid: 1f6684932b15b524cb8d4c2264b6adcd, type: 2}
+  textOfOutcome: You lose health from the fight with the monkey
+  howMuchHealth: -2

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   islandsEvents:
   - {fileID: 11400000, guid: d4deec7a7cc406e4d9a3f984f2c38588, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 494acf2b2ba8fdb4aa07ed6462586cfa, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   amountOfEvents: 1

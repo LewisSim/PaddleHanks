@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using PaddleHanks.GameController.Script;
-using UnityEngine;
+﻿using PaddleHanks.GameController.Script;
 
 namespace PaddleHanks.Island.Script
 {
@@ -16,29 +14,16 @@ namespace PaddleHanks.Island.Script
 
         private void StartIsland()
         {
-            SetUI();
+            throw new System.NotImplementedException();
         }
 
-        IEnumerator SetUI()
+        void SetUI()
         {
-            _ui.ChangeAllAttributeText(
-                GameValues.Instance.attributes.Comfort.Attribute,
-                GameValues.Instance.attributes.Health.Attribute,
-                GameValues.Instance.attributes.Hunger.Attribute,
-                GameValues.Instance.attributes.Thirst.Attribute);
             foreach (var dayEvent in GameValues.Instance.currentIslandDay.IslandEvents())
             {
                 _ui.ChangeEventText(dayEvent.islandEvent.islandEvent.textToShow);
-                _ui.SpawnChoices(dayEvent.islandEvent.islandEvent.choices);
-                yield return new WaitUntil(() => _ui.IsChoicePicked);
-                
             }
             
-        }
-
-        IEnumerator WaitForChoice()
-        {
-            yield break;
         }
     }
 }

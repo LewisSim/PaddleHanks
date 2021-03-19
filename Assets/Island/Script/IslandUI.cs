@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using PaddleHanks.GameController.Script;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,11 +18,8 @@ namespace PaddleHanks.Island.Script
         [Header("Text components for attributes.")]
         [SerializeField] private Slider comfort, health, hunger, thirst;
 
-        [SerializeField] private GameObject choiceParent;
         [SerializeField] private GameObject choicesPrefab;
         [NonSerialized] public Choices ChoicePicked;
-        [NonSerialized] public bool IsChoicePicked;
-        
 
         private void Awake()
         {
@@ -59,24 +55,15 @@ namespace PaddleHanks.Island.Script
             ChangeAllAttributeText(0, 0, 0, 0);
             
         }
-
-        public void SpawnChoices(List<IslandEventsChoices.Script.Choices> choices)
-        {
-            foreach (var choice in choices)
-            {
-                var choiceObj = Instantiate(choicesPrefab, choiceParent.transform);
-                var choiceObjChoices = choiceObj.GetComponent<Choices>();
-                choiceObjChoices.islandUI = this;
-                choiceObjChoices.choicesText.text = choice.choice;
-            }
-        }
         
     }
 
     public class Choices : MonoBehaviour
     {
-        public Text choicesText;
-        public IslandUI islandUI;
+        public GameObject panel;
+        [SerializeField] private Text choicesText;
+        
+        private IslandUI IslandUI;
         
 
         public void ChangeChoiceText(string choiceText)
@@ -86,7 +73,7 @@ namespace PaddleHanks.Island.Script
 
         public void SelectChoice()
         {
-            islandUI.ChoicePicked = this;
+            IslandUI.ChoicePicked = this;
         }
     }
 }
